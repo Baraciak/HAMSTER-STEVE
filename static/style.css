@@ -1,0 +1,37 @@
+body
+{
+    font-family: 'Dokdo', cursive;
+    font-size: 50px;
+    background-color: #a22fde;
+    color: #282828;
+    letter-spacing: 5px;
+}
+
+#play-button
+{
+    background-color: #ff982c;
+    font-size: 50px;
+    width: 650px;
+    height: 200px;
+    border: antiquewhite 5px solid;
+    font-family: 'Dokdo', cursive;
+    color: white;
+    box-shadow: #4e4e4e 5px 5px;
+}
+
+#play-button:hover
+{
+    background-color: #4e4e4e;
+    text-decoration: underline;
+    cursor: pointer;
+    box-shadow: #4e4e4e 2px 2px;
+}
+
+#container
+{
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

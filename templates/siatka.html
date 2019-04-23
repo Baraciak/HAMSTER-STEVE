@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="{{ url_for('static' , filename='css/style.css') }}" rel="stylesheet" type="text/css" />
-    <script src="{{ url_for('static', filename='js/game.js') }}" defer></script>
+    <!--<link href="{{ url_for('static' , filename='css/style.css') }}" rel="stylesheet" type="text/css" />-->
+    <!--<script src="{{ url_for('static', filename='js/game.js') }}" defer></script>-->
+    <style>
+        body
+        {
+            background-image: url(../static/images/background.jpg);
+            padding-top: 150px;
+        }
+
+        #board
+        {
+            height: 600px;
+            width: 900px;
+            border: black 2px solid;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
-<body style="margin-left: auto">
-    <div style="height: 400px; width: 600px; border: black 2px solid"></div>
+<body>
+    <div id="board"></div>
 
 </body>
 </html>
