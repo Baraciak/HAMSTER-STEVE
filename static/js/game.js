@@ -20,7 +20,7 @@ function printPipes() {
     let pipeIndex = 1;
     let sideBar = 'left';
 
-    for (let i = 1; i <= 36; i++) {
+    for (let i = 1; i <= 7; i++) {
         if (i >= 12) sideBar = 'right';
 
         if (i === 1) {
@@ -47,24 +47,29 @@ function printPipes() {
             for (let l = 0; l <= 1; l++) {
                 let pipeDiv = createPipe(pipeIndex);
                 document.querySelector(`#column-${sideBar}2`).appendChild(pipeDiv);
+                let pipeDiv2 = createPipe(pipeIndex);
+                document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv2);
             }
+            let pipeDiv3 = createPipe(pipeIndex);
+            document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv3);
         } else if (i === 6) {
             for (let l = 0; l <= 1; l++) {
                 let pipeDiv = createPipe(pipeIndex);
                 document.querySelector(`#column-${sideBar}2`).appendChild(pipeDiv);
+                let pipeDiv2 = createPipe(pipeIndex);
+                document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv2);
             }
-        } else if (i === 7) {
-            let pipeDiv = createPipe(pipeIndex);
-            document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv);
-        } else if (i === 8) {
-            let pipeDiv = createPipe(pipeIndex);
-            document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv);
-        } else if (i === 9) {
-            let pipeDiv = createPipe(pipeIndex);
-            document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv);
-        } else if (i === 10) {
-            let pipeDiv = createPipe(pipeIndex);
-            document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv);
+            let pipeDiv3 = createPipe(pipeIndex);
+            document.querySelector(`#column-${sideBar}3`).appendChild(pipeDiv3);
+
+        } else {
+            sideBar = 'right';
+            for (let l = 0; l < 6; l++) {
+                for (let k = 1; k <= 3; k++){
+                    document.querySelector(`#column-${sideBar}${k}`).insertAdjacentHTML('beforeend', `
+                    <div id="blank"></div>`);
+                }
+            }
         }
         pipeIndex++;
     }

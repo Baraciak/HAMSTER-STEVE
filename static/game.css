@@ -95,4 +95,18 @@ body
 
 .pipe:hover
 {
+    filter: brightness(130%);
+}
+
+#blank
+{
+    width: 106px;
+    height: 106px;
+    background-color: #11557C;
+    border: whitesmoke 2px solid;
+}
+
+#blank:hover
+{
+    filter: brightness(130%);
 }
