@@ -5,12 +5,27 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
     <link href="{{ url_for('static' , filename='game.css') }}" rel="stylesheet" type="text/css" />
-    <!--<script src="{{ url_for('static', filename='js/game.js') }}" defer></script>-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js' defer></script>
+    <script src='../static/js/game.js' defer></script>
 
 </head>
 <body>
+
     <div id="header">STEVE THE HAMSTER</div>
-    <div id="board"></div>
+
+    <div id="gameField">
+        <div id="pipes-container-left">
+            <div style="width: 120px; height: 120px; background-color: #3A7734"></div>
+            <div style="width: 120px; height: 120px; background-color: #50dade"></div>
+        </div>
+        <div id="board"></div>
+        <div id="pipes-container-right"></div>
+    </div>
+
+    <div style="clear: both;"></div>
+    <div id="footer"></div>
 
 </body>
 </html>
