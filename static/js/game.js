@@ -24,12 +24,10 @@ function printPipes() {
         if (i >= 12) sideBar = 'right';
 
         if (i === 1) {
-            for (let l = 0; l <= 1; l++) {
                 let pipeDiv = createPipe(pipeIndex);
                 document.querySelector(`#column-${sideBar}1`).appendChild(pipeDiv);
-            }
         } else if (i === 2) {
-            for (let l = 0; l <= 1; l++) {
+            for (let l = 0; l <= 2; l++) {
                 let pipeDiv = createPipe(pipeIndex);
                 document.querySelector(`#column-${sideBar}1`).appendChild(pipeDiv);
             }
@@ -38,11 +36,11 @@ function printPipes() {
                 let pipeDiv = createPipe(pipeIndex);
                 document.querySelector(`#column-${sideBar}1`).appendChild(pipeDiv);
             }
+            let pipeDiv = createPipe(pipeIndex);
+            document.querySelector(`#column-${sideBar}2`).appendChild(pipeDiv);
         } else if (i === 4) {
-            for (let l = 0; l <= 1; l++) {
                 let pipeDiv = createPipe(pipeIndex);
                 document.querySelector(`#column-${sideBar}2`).appendChild(pipeDiv);
-            }
         } else if (i === 5) {
             for (let l = 0; l <= 1; l++) {
                 let pipeDiv = createPipe(pipeIndex);
