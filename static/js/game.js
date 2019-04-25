@@ -21,8 +21,7 @@ function printPipes() {
     let sideBar = 'left';
 
     for (let i = 1; i <= 36; i++) {
-        alert(i);
-        // if (i >= 12) sideBar = 'right';
+        if (i >= 12) sideBar = 'right';
 
         if (i === 1) {
             for (let l = 0; l <= 1; l++) {
