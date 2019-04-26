@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HAMSTER STEVE ROZPIERDOL</title>
+    <title>ZABAW SIĘ Z CHOMICZKIEM</title>
     <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
     <link href="{{ url_for('static' , filename='index.css') }}" rel="stylesheet" type="text/css">
 
 </head>
 <body>
+    <div id="header">ZABAW SIE Z CHOMICZKIEM</div>
     <div id="container">
         <form action="/play">
             <br>
+            <div class="parent">
+                <img class="image1" src="static/images/stickeroid_5bf57f6b51e2e.png"  />
+                <input class="image2" id="play-button" type="submit" value="START" />
+            </div>
             <br>
-            <input id="play-button" type="submit" value="ZABAW SIE Z CHOMICZKIEM">
         </form>
     </div>
 
